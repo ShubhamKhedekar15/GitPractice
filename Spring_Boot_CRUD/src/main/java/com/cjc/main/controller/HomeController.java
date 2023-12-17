@@ -31,6 +31,7 @@ public class HomeController
 	public List<Employee> saveData(@RequestBody List<Employee> e)
 	{
 		List<Employee> list=hs.saveData(e);
+               System.out.println("Git Practice changes");
 		return list;
 	}
 	
