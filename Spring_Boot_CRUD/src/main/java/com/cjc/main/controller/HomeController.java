@@ -32,6 +32,7 @@ public class HomeController
 	{
 		List<Employee> list=hs.saveData(e);
                System.out.println("Git Practice changes");
+               System.out.println("Git Practice changes1");
 		return list;
 	}
 	
@@ -39,7 +40,11 @@ public class HomeController
 	public Employee updateData(@RequestBody Employee e)
 	{
 		Employee emp=hs.updateData(e);
+
+
+
 		 System.out.println("Git Practice changes");
+
 		return emp;
 	}
 	
@@ -47,6 +52,7 @@ public class HomeController
 	public Employee updateSingle(@PathVariable int empId,@RequestBody Employee e)
 	{
 		Employee emp= hs.updateSingle(empId,e);
+System.out.println("Git Practice changes1");
 		return emp;
 	}
 	
