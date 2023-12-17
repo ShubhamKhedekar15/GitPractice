@@ -39,6 +39,7 @@ public class HomeController
 	public Employee updateData(@RequestBody Employee e)
 	{
 		Employee emp=hs.updateData(e);
+		 System.out.println("Git Practice changes");
 		return emp;
 	}
 	
@@ -53,6 +54,7 @@ public class HomeController
 	public String deleteData(@PathVariable int empId)
 	{
 		 hs.deleteData(empId);
+		 System.out.println("Git Practice changes");
 		 return "Data Deleted";
 	}
 	
